@@ -93,7 +93,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - https://ayushbhargava22.github.io/NFT-PREVIEW/
 - Frontend Mentor - https://www.frontendmentor.io/profile/ayushbhargava22
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
