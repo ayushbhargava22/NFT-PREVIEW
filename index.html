@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(217, 54%, 11%);
+        font-family: "Outfit", sans-serif;
+      }
+
+      p {
+        font-size: 18px;
+        font-family: "Outfit", sans-serif;
+        margin-bottom: 5px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        height: fit-content;
+        width: 355px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 10px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 5px 20px 10px 1em #0b1626, -5px 20px 10px 1em #0b1626;
+      }
+      .img-container {
+        width: 285px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .nft-img > img {
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        z-index: -1;
+      }
+
+      .nft-img {
+        height: auto;
+        margin: 15px;
+        margin-bottom: 0px;
+      }
+      .information-section {
+        padding: 15px;
+        padding-top: 0px;
+        border-bottom: 1px solid hsl(215, 32%, 27%);
+        padding-bottom: 20px;
+      }
+      .nft-name {
+        color: hsl(0, 0%, 100%);
+      }
+      .nft-sub-info {
+        color: hsl(178, 100%, 50%);
+      }
+      .price {
+        display: flex;
+        justify-content: space-between;
+      }
+      .nft-price,
+      .nft-time {
+        color: hsl(215, 51%, 70%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nft-price img,
+      .nft-time img {
+        margin-right: 10px;
+      }
+      .owner {
+        display: flex;
+        margin: 15px;
+      }
+      .owner-img {
+        width: 40px;
+        height: 40px;
+      }
+      .owner p {
+        margin-left: 10px;
+        margin-top: 10px;
+        color: hsl(178, 100%, 50%);
+      }
+      .name {
+        color: hsl(0, 0%, 100%);
+      }
+      .imag-container:hover > .nft-img:before {
+        content: url("images/icon-view.svg");
+        position: absolute;
+        width: 90.7%;
+        height: 53.2%;
+        background-color: rgb(0 255 247 / 50%);
+        border-radius: 10px;
+        transition: 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imag-container">
+        <div class="nft-img">
+          <img src="./images/image-equilibrium.jpg" alt="image" />
+        </div>
+      </div>
+
+      <div class="information-section">
+        <h1 class="nft-name">Equilibrium #3429</h1>
+        <p class="nft-sub-info">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="price">
+          <p class="nft-price">
+            <img src="./images/icon-ethereum.svg" alt="logo" />0.041 ETH
+          </p>
+
+          <p class="nft-time">
+            <img src="./images/icon-clock.svg" alt="clock" />3 days left
+          </p>
+        </div>
+      </div>
+
+      <div class="owner">
+        <img
+          src="./images/image-avatar.png"
+          class="owner-img"
+          alt="ownerImage"
+        />
+        <p>Creation of <span class="name">Jules Wyvern</span></p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
